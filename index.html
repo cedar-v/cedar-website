@@ -1,15 +1,70 @@
 <!DOCTYPE html>
 <html lang="zh-CN">
+<script>
+    var _hmt = _hmt || [];
+    (function () {
+        var hm = document.createElement("script");
+        hm.src = "https://hm.baidu.com/hm.js?7be3cd2f2dab332492da8e9a4e430daf";
+        var s = document.getElementsByTagName("script")[0];
+        s.parentNode.insertBefore(hm, s);
+    })();
+</script>
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>License Manager - 企业级软件授权管理平台 | Cedar-v</title>
-    <meta name="description" content="License Manager 是 Cedar-v 开源的企业级软件授权管理平台，提供完整的授权生成、分发、验证和生命周期管理解决方案。支持在线/离线授权模式，硬件指纹绑定，RSA加密保护。">
+    <meta name="description"
+        content="License Manager 是 Cedar-v 开源的企业级软件授权管理平台，提供完整的授权生成、分发、验证和生命周期管理解决方案。支持在线/离线授权模式，硬件指纹绑定，RSA加密保护。">
     <meta name="keywords" content="软件授权管理, License管理, 授权验证, 软件保护, 开源, Cedar-v">
+    <!-- Open Graph / Facebook -->
+    <meta property="og:type" content="website">
+    <meta property="og:url" content="https://cedar-v.com/">
+    <meta property="og:title" content="License Manager - 企业级软件授权管理平台 | Cedar-v">
+    <meta property="og:description" content="License Manager 是 Cedar-v 开源的企业级软件授权管理平台，提供完整的授权生成、分发、验证和生命周期管理解决方案。">
+    <meta property="og:image" content="https://cedar-v.com/logo-icon.png">
+
+    <!-- Twitter -->
+    <meta property="twitter:card" content="summary_large_image">
+    <meta property="twitter:url" content="https://cedar-v.com/">
+    <meta property="twitter:title" content="License Manager - 企业级软件授权管理平台 | Cedar-v">
+    <meta property="twitter:description" content="License Manager 是 Cedar-v 开源的企业级软件授权管理平台，提供完整的授权生成、分发、验证和生命周期管理解决方案。">
+    <meta property="twitter:image" content="https://cedar-v.com/logo-icon.png">
+
+    <script type="application/ld+json">
+    {
+      "@context": "https://schema.org",
+      "@type": "WebSite",
+      "name": "Cedar-v License Manager",
+      "url": "https://cedar-v.com/",
+      "potentialAction": {
+        "@type": "SearchAction",
+        "target": {
+          "@type": "EntryPoint",
+          "urlTemplate": "https://cedar-v.com/search?q={search_term_string}"
+        },
+        "query-input": "required name=search_term_string"
+      }
+    }
+    </script>
+    <script type="application/ld+json">
+    {
+      "@context": "https://schema.org",
+      "@type": "Organization",
+      "name": "Cedar-v",
+      "url": "https://cedar-v.com/",
+      "logo": "https://cedar-v.com/logo-icon.png",
+      "sameAs": [
+        "https://github.com/cedar-v/license-manager"
+      ]
+    }
+    </script>
     <link rel="icon" type="image/png" href="logo-icon.png">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=Noto+Sans+SC:wght@400;500;600;700&display=swap" rel="stylesheet">
+    <link
+        href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=Noto+Sans+SC:wght@400;500;600;700&display=swap"
+        rel="stylesheet">
     <style>
         :root {
             --primary: #058f72;
@@ -210,7 +265,7 @@
             left: 0;
             width: 100%;
             height: 100%;
-            background-image: 
+            background-image:
                 linear-gradient(rgba(5, 143, 114, 0.05) 1px, transparent 1px),
                 linear-gradient(90deg, rgba(5, 143, 114, 0.05) 1px, transparent 1px);
             background-size: 50px 50px;
@@ -218,15 +273,20 @@
         }
 
         @keyframes float {
-            0%, 100% {
+
+            0%,
+            100% {
                 transform: translate(0, 0) scale(1);
             }
+
             25% {
                 transform: translate(30px, -30px) scale(1.05);
             }
+
             50% {
                 transform: translate(-20px, 20px) scale(0.95);
             }
+
             75% {
                 transform: translate(20px, 10px) scale(1.02);
             }
@@ -236,6 +296,7 @@
             0% {
                 background-position: 0 0;
             }
+
             100% {
                 background-position: 60px 60px;
             }
@@ -958,6 +1019,7 @@
                 opacity: 0;
                 transform: translateY(20px);
             }
+
             to {
                 opacity: 1;
                 transform: translateY(0);
@@ -976,6 +1038,7 @@
         }
     </style>
 </head>
+
 <body>
     <!-- Animated Background -->
     <div class="animated-bg">
@@ -989,7 +1052,7 @@
     <header class="header">
         <div class="header-container">
             <a href="#" class="logo">
-                <img src="logo-icon.png" alt="Cedar-v">
+                <img src="logo-icon.png" alt="Cedar-v Logo">
                 <span class="logo-text">Cedar<span>-v</span></span>
             </a>
             <nav class="nav">
@@ -1001,11 +1064,12 @@
             </nav>
             <div class="nav-buttons">
                 <a href="http://lm.cedar-v.com:18080" class="btn btn-outline" target="_blank">在线演示</a>
-                <a href="https://docs.lm.cedar-v.com/guide/getting-started.html" class="btn btn-primary" target="_blank">开始使用</a>
+                <a href="https://docs.lm.cedar-v.com/guide/getting-started.html" class="btn btn-primary"
+                    target="_blank">开始使用</a>
             </div>
             <button class="mobile-menu-btn">
                 <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
-                    <path d="M3 12h18M3 6h18M3 18h18"/>
+                    <path d="M3 12h18M3 6h18M3 18h18" />
                 </svg>
             </button>
         </div>
@@ -1016,9 +1080,9 @@
         <div class="hero-container">
             <div class="hero-badge">
                 <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
-                    <path d="M12 2L2 7l10 5 10-5-10-5z"/>
-                    <path d="M2 17l10 5 10-5"/>
-                    <path d="M2 12l10 5 10-5"/>
+                    <path d="M12 2L2 7l10 5 10-5-10-5z" />
+                    <path d="M2 17l10 5 10-5" />
+                    <path d="M2 12l10 5 10-5" />
                 </svg>
                 开源企业级软件授权管理平台
             </div>
@@ -1030,45 +1094,48 @@
                 全生命周期授权管理解决方案，支持在线/离线双重模式，硬件指纹绑定与RSA加密双重防护，助力软件厂商实现可持续增长
             </p>
             <div class="hero-buttons">
-                <a href="https://docs.lm.cedar-v.com/guide/getting-started.html" class="btn btn-primary btn-lg" target="_blank">
+                <a href="https://docs.lm.cedar-v.com/guide/getting-started.html" class="btn btn-primary btn-lg"
+                    target="_blank">
                     <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
-                        <path d="M13 2L3 14h9l-1 8 10-12h-9l1-8z"/>
+                        <path d="M13 2L3 14h9l-1 8 10-12h-9l1-8z" />
                     </svg>
                     开始使用
                 </a>
                 <a href="http://lm.cedar-v.com:18080" class="btn btn-outline btn-lg" target="_blank">
                     <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
-                        <circle cx="12" cy="12" r="10"/>
-                        <polygon points="10 8 16 12 10 16 10 8"/>
+                        <circle cx="12" cy="12" r="10" />
+                        <polygon points="10 8 16 12 10 16 10 8" />
                     </svg>
                     在线演示
                 </a>
                 <a href="https://github.com/cedar-v/license-manager" class="btn btn-outline btn-lg" target="_blank">
                     <svg width="20" height="20" viewBox="0 0 24 24" fill="currentColor">
-                        <path d="M12 0C5.37 0 0 5.37 0 12c0 5.31 3.435 9.795 8.205 11.385.6.105.825-.255.825-.57 0-.285-.015-1.23-.015-2.235-3.015.555-3.795-.735-4.035-1.41-.135-.345-.72-1.41-1.23-1.695-.42-.225-1.02-.78-.015-.795.945-.015 1.62.87 1.845 1.23 1.08 1.815 2.805 1.305 3.495.99.105-.78.42-1.305.765-1.605-2.67-.3-5.46-1.335-5.46-5.925 0-1.305.465-2.385 1.23-3.225-.12-.3-.54-1.53.12-3.18 0 0 1.005-.315 3.3 1.23.96-.27 1.98-.405 3-.405s2.04.135 3 .405c2.295-1.56 3.3-1.23 3.3-1.23.66 1.65.24 2.88.12 3.18.765.84 1.23 1.905 1.23 3.225 0 4.605-2.805 5.625-5.475 5.925.435.375.81 1.095.81 2.22 0 1.605-.015 2.895-.015 3.3 0 .315.225.69.825.57A12.02 12.02 0 0024 12c0-6.63-5.37-12-12-12z"/>
+                        <path
+                            d="M12 0C5.37 0 0 5.37 0 12c0 5.31 3.435 9.795 8.205 11.385.6.105.825-.255.825-.57 0-.285-.015-1.23-.015-2.235-3.015.555-3.795-.735-4.035-1.41-.135-.345-.72-1.41-1.23-1.695-.42-.225-1.02-.78-.015-.795.945-.015 1.62.87 1.845 1.23 1.08 1.815 2.805 1.305 3.495.99.105-.78.42-1.305.765-1.605-2.67-.3-5.46-1.335-5.46-5.925 0-1.305.465-2.385 1.23-3.225-.12-.3-.54-1.53.12-3.18 0 0 1.005-.315 3.3 1.23.96-.27 1.98-.405 3-.405s2.04.135 3 .405c2.295-1.56 3.3-1.23 3.3-1.23.66 1.65.24 2.88.12 3.18.765.84 1.23 1.905 1.23 3.225 0 4.605-2.805 5.625-5.475 5.925.435.375.81 1.095.81 2.22 0 1.605-.015 2.895-.015 3.3 0 .315.225.69.825.57A12.02 12.02 0 0024 12c0-6.63-5.37-12-12-12z" />
                     </svg>
                     GitHub
                 </a>
             </div>
             <div class="hero-stats">
                 <div class="stat-item">
-                    <div class="stat-value">< 200ms</div>
-                    <div class="stat-label">响应时间</div>
-                </div>
-                <div class="stat-item">
-                    <div class="stat-value">十万级</div>
-                    <div class="stat-label">并发支持</div>
-                </div>
-                <div class="stat-item">
-                    <div class="stat-value">AES-256</div>
-                    <div class="stat-label">加密标准</div>
-                </div>
-                <div class="stat-item">
-                    <div class="stat-value">100%</div>
-                    <div class="stat-label">开源免费</div>
+                    <div class="stat-value">
+                        < 200ms</div>
+                            <div class="stat-label">响应时间</div>
+                    </div>
+                    <div class="stat-item">
+                        <div class="stat-value">十万级</div>
+                        <div class="stat-label">并发支持</div>
+                    </div>
+                    <div class="stat-item">
+                        <div class="stat-value">AES-256</div>
+                        <div class="stat-label">加密标准</div>
+                    </div>
+                    <div class="stat-item">
+                        <div class="stat-value">100%</div>
+                        <div class="stat-label">开源免费</div>
+                    </div>
                 </div>
             </div>
-        </div>
     </section>
 
     <!-- Core Advantages -->
@@ -1083,7 +1150,7 @@
                 <div class="feature-card animate-on-scroll">
                     <div class="feature-icon">
                         <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
-                            <path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"/>
+                            <path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z" />
                         </svg>
                     </div>
                     <h3 class="feature-title">企业级安全</h3>
@@ -1092,7 +1159,7 @@
                 <div class="feature-card animate-on-scroll">
                     <div class="feature-icon">
                         <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
-                            <path d="M13 2L3 14h9l-1 8 10-12h-9l1-8z"/>
+                            <path d="M13 2L3 14h9l-1 8 10-12h-9l1-8z" />
                         </svg>
                     </div>
                     <h3 class="feature-title">快速集成</h3>
@@ -1101,8 +1168,8 @@
                 <div class="feature-card animate-on-scroll">
                     <div class="feature-icon">
                         <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
-                            <path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"/>
-                            <path d="M22 6l-10 7L2 6"/>
+                            <path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z" />
+                            <path d="M22 6l-10 7L2 6" />
                         </svg>
                     </div>
                     <h3 class="feature-title">完整闭环</h3>
@@ -1111,8 +1178,8 @@
                 <div class="feature-card animate-on-scroll">
                     <div class="feature-icon">
                         <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
-                            <line x1="12" y1="1" x2="12" y2="23"/>
-                            <path d="M17 5H9.5a3.5 3.5 0 0 0 0 7h5a3.5 3.5 0 0 1 0 7H6"/>
+                            <line x1="12" y1="1" x2="12" y2="23" />
+                            <path d="M17 5H9.5a3.5 3.5 0 0 0 0 7h5a3.5 3.5 0 0 1 0 7H6" />
                         </svg>
                     </div>
                     <h3 class="feature-title">商业赋能</h3>
@@ -1135,8 +1202,8 @@
                     <div class="function-header">
                         <div class="function-icon">
                             <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
-                                <rect x="3" y="11" width="18" height="11" rx="2" ry="2"/>
-                                <path d="M7 11V7a5 5 0 0 1 10 0v4"/>
+                                <rect x="3" y="11" width="18" height="11" rx="2" ry="2" />
+                                <path d="M7 11V7a5 5 0 0 1 10 0v4" />
                             </svg>
                         </div>
                         <h3 class="function-title">智能授权管理</h3>
@@ -1147,8 +1214,8 @@
                     <div class="function-header">
                         <div class="function-icon">
                             <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
-                                <rect x="1" y="4" width="22" height="16" rx="2" ry="2"/>
-                                <line x1="1" y1="10" x2="23" y2="10"/>
+                                <rect x="1" y="4" width="22" height="16" rx="2" ry="2" />
+                                <line x1="1" y1="10" x2="23" y2="10" />
                             </svg>
                         </div>
                         <h3 class="function-title">订单支付系统</h3>
@@ -1159,11 +1226,11 @@
                     <div class="function-header">
                         <div class="function-icon">
                             <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
-                                <path d="M14 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V8z"/>
-                                <polyline points="14 2 14 8 20 8"/>
-                                <line x1="16" y1="13" x2="8" y2="13"/>
-                                <line x1="16" y1="17" x2="8" y2="17"/>
-                                <polyline points="10 9 9 9 8 9"/>
+                                <path d="M14 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V8z" />
+                                <polyline points="14 2 14 8 20 8" />
+                                <line x1="16" y1="13" x2="8" y2="13" />
+                                <line x1="16" y1="17" x2="8" y2="17" />
+                                <polyline points="10 9 9 9 8 9" />
                             </svg>
                         </div>
                         <h3 class="function-title">发票管理服务</h3>
@@ -1174,8 +1241,8 @@
                     <div class="function-header">
                         <div class="function-icon">
                             <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
-                                <path d="M20 21v-2a4 4 0 0 0-4-4H8a4 4 0 0 0-4 4v2"/>
-                                <circle cx="12" cy="7" r="4"/>
+                                <path d="M20 21v-2a4 4 0 0 0-4-4H8a4 4 0 0 0-4 4v2" />
+                                <circle cx="12" cy="7" r="4" />
                             </svg>
                         </div>
                         <h3 class="function-title">用户权限体系</h3>
@@ -1186,9 +1253,9 @@
                     <div class="function-header">
                         <div class="function-icon">
                             <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
-                                <line x1="18" y1="20" x2="18" y2="10"/>
-                                <line x1="12" y1="20" x2="12" y2="4"/>
-                                <line x1="6" y1="20" x2="6" y2="14"/>
+                                <line x1="18" y1="20" x2="18" y2="10" />
+                                <line x1="12" y1="20" x2="12" y2="4" />
+                                <line x1="6" y1="20" x2="6" y2="14" />
                             </svg>
                         </div>
                         <h3 class="function-title">数据统计分析</h3>
@@ -1199,7 +1266,7 @@
                     <div class="function-header">
                         <div class="function-icon">
                             <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
-                                <path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"/>
+                                <path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z" />
                             </svg>
                         </div>
                         <h3 class="function-title">系统运维管理</h3>
@@ -1222,8 +1289,8 @@
                 <div class="scenario-card animate-on-scroll">
                     <div class="scenario-icon">
                         <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
-                            <path d="M2 3h6a4 4 0 0 1 4 4v14a3 3 0 0 0-3-3H2z"/>
-                            <path d="M22 3h-6a4 4 0 0 0-4 4v14a3 3 0 0 1 3-3h7z"/>
+                            <path d="M2 3h6a4 4 0 0 1 4 4v14a3 3 0 0 0-3-3H2z" />
+                            <path d="M22 3h-6a4 4 0 0 0-4 4v14a3 3 0 0 1 3-3h7z" />
                         </svg>
                     </div>
                     <h3 class="scenario-title">SaaS厂商</h3>
@@ -1232,8 +1299,8 @@
                 <div class="scenario-card animate-on-scroll">
                     <div class="scenario-icon">
                         <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
-                            <polyline points="16 18 22 12 16 6"/>
-                            <polyline points="8 6 2 12 8 18"/>
+                            <polyline points="16 18 22 12 16 6" />
+                            <polyline points="8 6 2 12 8 18" />
                         </svg>
                     </div>
                     <h3 class="scenario-title">软件开发商</h3>
@@ -1242,9 +1309,9 @@
                 <div class="scenario-card animate-on-scroll">
                     <div class="scenario-icon">
                         <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
-                            <rect x="2" y="3" width="20" height="14" rx="2" ry="2"/>
-                            <line x1="8" y1="21" x2="16" y2="21"/>
-                            <line x1="12" y1="17" x2="12" y2="21"/>
+                            <rect x="2" y="3" width="20" height="14" rx="2" ry="2" />
+                            <line x1="8" y1="21" x2="16" y2="21" />
+                            <line x1="12" y1="17" x2="12" y2="21" />
                         </svg>
                     </div>
                     <h3 class="scenario-title">企业IT部门</h3>
@@ -1253,10 +1320,10 @@
                 <div class="scenario-card animate-on-scroll">
                     <div class="scenario-icon">
                         <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
-                            <path d="M17 21v-2a4 4 0 0 0-4-4H5a4 4 0 0 0-4 4v2"/>
-                            <circle cx="9" cy="7" r="4"/>
-                            <path d="M23 21v-2a4 4 0 0 0-3-3.87"/>
-                            <path d="M16 3.13a4 4 0 0 1 0 7.75"/>
+                            <path d="M17 21v-2a4 4 0 0 0-4-4H5a4 4 0 0 0-4 4v2" />
+                            <circle cx="9" cy="7" r="4" />
+                            <path d="M23 21v-2a4 4 0 0 0-3-3.87" />
+                            <path d="M16 3.13a4 4 0 0 1 0 7.75" />
                         </svg>
                     </div>
                     <h3 class="scenario-title">独立开发者</h3>
@@ -1278,7 +1345,7 @@
                 <div class="tech-card animate-on-scroll">
                     <div class="tech-icon">
                         <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
-                            <polygon points="13 2 3 14 12 14 11 22 21 10 12 10 13 2"/>
+                            <polygon points="13 2 3 14 12 14 11 22 21 10 12 10 13 2" />
                         </svg>
                     </div>
                     <div class="tech-content">
@@ -1289,7 +1356,7 @@
                 <div class="tech-card animate-on-scroll">
                     <div class="tech-icon">
                         <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
-                            <path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"/>
+                            <path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z" />
                         </svg>
                     </div>
                     <div class="tech-content">
@@ -1300,8 +1367,8 @@
                 <div class="tech-card animate-on-scroll">
                     <div class="tech-icon">
                         <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
-                            <polyline points="16 18 22 12 16 6"/>
-                            <polyline points="8 6 2 12 8 18"/>
+                            <polyline points="16 18 22 12 16 6" />
+                            <polyline points="8 6 2 12 8 18" />
                         </svg>
                     </div>
                     <div class="tech-content">
@@ -1312,7 +1379,8 @@
                 <div class="tech-card animate-on-scroll">
                     <div class="tech-icon">
                         <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
-                            <path d="M21 16V8a2 2 0 0 0-1-1.73l-7-4a2 2 0 0 0-2 0l-7 4A2 2 0 0 0 3 8v8a2 2 0 0 0 1 1.73l7 4a2 2 0 0 0 2 0l7-4A2 2 0 0 0 21 16z"/>
+                            <path
+                                d="M21 16V8a2 2 0 0 0-1-1.73l-7-4a2 2 0 0 0-2 0l-7 4A2 2 0 0 0 3 8v8a2 2 0 0 0 1 1.73l7 4a2 2 0 0 0 2 0l7-4A2 2 0 0 0 21 16z" />
                         </svg>
                     </div>
                     <div class="tech-content">
@@ -1340,25 +1408,25 @@
                     <ul class="business-features">
                         <li>
                             <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
-                                <polyline points="20 6 9 17 4 12"/>
+                                <polyline points="20 6 9 17 4 12" />
                             </svg>
                             完整的核心功能
                         </li>
                         <li>
                             <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
-                                <polyline points="20 6 9 17 4 12"/>
+                                <polyline points="20 6 9 17 4 12" />
                             </svg>
                             社区技术支持
                         </li>
                         <li>
                             <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
-                                <polyline points="20 6 9 17 4 12"/>
+                                <polyline points="20 6 9 17 4 12" />
                             </svg>
                             开源代码，自主可控
                         </li>
                         <li>
                             <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
-                                <polyline points="20 6 9 17 4 12"/>
+                                <polyline points="20 6 9 17 4 12" />
                             </svg>
                             活跃的开发者社区
                         </li>
@@ -1371,25 +1439,25 @@
                     <ul class="business-features">
                         <li>
                             <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
-                                <polyline points="20 6 9 17 4 12"/>
+                                <polyline points="20 6 9 17 4 12" />
                             </svg>
                             定制化开发服务
                         </li>
                         <li>
                             <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
-                                <polyline points="20 6 9 17 4 12"/>
+                                <polyline points="20 6 9 17 4 12" />
                             </svg>
                             专业技术支持
                         </li>
                         <li>
                             <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
-                                <polyline points="20 6 9 17 4 12"/>
+                                <polyline points="20 6 9 17 4 12" />
                             </svg>
                             优先功能更新
                         </li>
                         <li>
                             <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
-                                <polyline points="20 6 9 17 4 12"/>
+                                <polyline points="20 6 9 17 4 12" />
                             </svg>
                             培训与咨询服务
                         </li>
@@ -1411,8 +1479,8 @@
                 <div class="quickstart-card animate-on-scroll">
                     <div class="quickstart-icon">
                         <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
-                            <path d="M2 3h6a4 4 0 0 1 4 4v14a3 3 0 0 0-3-3H2z"/>
-                            <path d="M22 3h-6a4 4 0 0 0-4 4v14a3 3 0 0 1 3-3h7z"/>
+                            <path d="M2 3h6a4 4 0 0 1 4 4v14a3 3 0 0 0-3-3H2z" />
+                            <path d="M22 3h-6a4 4 0 0 0-4 4v14a3 3 0 0 1 3-3h7z" />
                         </svg>
                     </div>
                     <h3 class="quickstart-title">查看文档</h3>
@@ -1420,16 +1488,16 @@
                     <a href="https://docs.lm.cedar-v.com/" class="quickstart-link" target="_blank">
                         阅读文档
                         <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
-                            <line x1="5" y1="12" x2="19" y2="12"/>
-                            <polyline points="12 5 19 12 12 19"/>
+                            <line x1="5" y1="12" x2="19" y2="12" />
+                            <polyline points="12 5 19 12 12 19" />
                         </svg>
                     </a>
                 </div>
                 <div class="quickstart-card animate-on-scroll">
                     <div class="quickstart-icon">
                         <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
-                            <circle cx="12" cy="12" r="10"/>
-                            <polygon points="10 8 16 12 10 16 10 8"/>
+                            <circle cx="12" cy="12" r="10" />
+                            <polygon points="10 8 16 12 10 16 10 8" />
                         </svg>
                     </div>
                     <h3 class="quickstart-title">在线演示</h3>
@@ -1437,15 +1505,16 @@
                     <a href="http://lm.cedar-v.com:18080" class="quickstart-link" target="_blank">
                         立即体验
                         <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
-                            <line x1="5" y1="12" x2="19" y2="12"/>
-                            <polyline points="12 5 19 12 12 19"/>
+                            <line x1="5" y1="12" x2="19" y2="12" />
+                            <polyline points="12 5 19 12 12 19" />
                         </svg>
                     </a>
                 </div>
                 <div class="quickstart-card animate-on-scroll">
                     <div class="quickstart-icon">
                         <svg viewBox="0 0 24 24" fill="currentColor">
-                            <path d="M12 0C5.37 0 0 5.37 0 12c0 5.31 3.435 9.795 8.205 11.385.6.105.825-.255.825-.57 0-.285-.015-1.23-.015-2.235-3.015.555-3.795-.735-4.035-1.41-.135-.345-.72-1.41-1.23-1.695-.42-.225-1.02-.78-.015-.795.945-.015 1.62.87 1.845 1.23 1.08 1.815 2.805 1.305 3.495.99.105-.78.42-1.305.765-1.605-2.67-.3-5.46-1.335-5.46-5.925 0-1.305.465-2.385 1.23-3.225-.12-.3-.54-1.53.12-3.18 0 0 1.005-.315 3.3 1.23.96-.27 1.98-.405 3-.405s2.04.135 3 .405c2.295-1.56 3.3-1.23 3.3-1.23.66 1.65.24 2.88.12 3.18.765.84 1.23 1.905 1.23 3.225 0 4.605-2.805 5.625-5.475 5.925.435.375.81 1.095.81 2.22 0 1.605-.015 2.895-.015 3.3 0 .315.225.69.825.57A12.02 12.02 0 0024 12c0-6.63-5.37-12-12-12z"/>
+                            <path
+                                d="M12 0C5.37 0 0 5.37 0 12c0 5.31 3.435 9.795 8.205 11.385.6.105.825-.255.825-.57 0-.285-.015-1.23-.015-2.235-3.015.555-3.795-.735-4.035-1.41-.135-.345-.72-1.41-1.23-1.695-.42-.225-1.02-.78-.015-.795.945-.015 1.62.87 1.845 1.23 1.08 1.815 2.805 1.305 3.495.99.105-.78.42-1.305.765-1.605-2.67-.3-5.46-1.335-5.46-5.925 0-1.305.465-2.385 1.23-3.225-.12-.3-.54-1.53.12-3.18 0 0 1.005-.315 3.3 1.23.96-.27 1.98-.405 3-.405s2.04.135 3 .405c2.295-1.56 3.3-1.23 3.3-1.23.66 1.65.24 2.88.12 3.18.765.84 1.23 1.905 1.23 3.225 0 4.605-2.805 5.625-5.475 5.925.435.375.81 1.095.81 2.22 0 1.605-.015 2.895-.015 3.3 0 .315.225.69.825.57A12.02 12.02 0 0024 12c0-6.63-5.37-12-12-12z" />
                         </svg>
                     </div>
                     <h3 class="quickstart-title">开源代码</h3>
@@ -1453,8 +1522,8 @@
                     <a href="https://github.com/cedar-v/license-manager" class="quickstart-link" target="_blank">
                         访问GitHub
                         <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
-                            <line x1="5" y1="12" x2="19" y2="12"/>
-                            <polyline points="12 5 19 12 12 19"/>
+                            <line x1="5" y1="12" x2="19" y2="12" />
+                            <polyline points="12 5 19 12 12 19" />
                         </svg>
                     </a>
                 </div>
@@ -1474,28 +1543,31 @@
                 <div class="community-card animate-on-scroll">
                     <div class="community-icon">
                         <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
-                            <path d="M17 21v-2a4 4 0 0 0-4-4H5a4 4 0 0 0-4 4v2"/>
-                            <circle cx="9" cy="7" r="4"/>
-                            <path d="M23 21v-2a4 4 0 0 0-3-3.87"/>
-                            <path d="M16 3.13a4 4 0 0 1 0 7.75"/>
+                            <path d="M17 21v-2a4 4 0 0 0-4-4H5a4 4 0 0 0-4 4v2" />
+                            <circle cx="9" cy="7" r="4" />
+                            <path d="M23 21v-2a4 4 0 0 0-3-3.87" />
+                            <path d="M16 3.13a4 4 0 0 1 0 7.75" />
                         </svg>
                     </div>
                     <h3 class="community-title">开源社区</h3>
                     <p class="community-desc">欢迎加入我们的开源社区，与开发者交流技术心得，扫描下方二维码加入QQ群</p>
                     <div class="community-qr">
-                        <img src="qrcode.jpg" alt="QQ群二维码" style="width: 100%; height: 100%; object-fit: cover; border-radius: 8px;">
+                        <img src="qrcode.jpg" alt="开源社区 QQ 群二维码" loading="lazy"
+                            style="width: 100%; height: 100%; object-fit: cover; border-radius: 8px;">
                     </div>
                 </div>
                 <div class="community-card animate-on-scroll">
                     <div class="community-icon">
                         <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
-                            <path d="M21 11.5a8.38 8.38 0 0 1-.9 3.8 8.5 8.5 0 0 1-7.6 4.7 8.38 8.38 0 0 1-3.8-.9L3 21l1.9-5.7a8.38 8.38 0 0 1-.9-3.8 8.5 8.5 0 0 1 4.7-7.6 8.38 8.38 0 0 1 3.8-.9h.5a8.48 8.48 0 0 1 8 8v.5z"/>
+                            <path
+                                d="M21 11.5a8.38 8.38 0 0 1-.9 3.8 8.5 8.5 0 0 1-7.6 4.7 8.38 8.38 0 0 1-3.8-.9L3 21l1.9-5.7a8.38 8.38 0 0 1-.9-3.8 8.5 8.5 0 0 1 4.7-7.6 8.38 8.38 0 0 1 3.8-.9h.5a8.48 8.48 0 0 1 8 8v.5z" />
                         </svg>
                     </div>
                     <h3 class="community-title">技术支持</h3>
                     <p class="community-desc">需要商业咨询或技术支持服务？扫描下方二维码，联系我们的技术团队获取专业帮助</p>
                     <div class="community-qr">
-                        <img src="qrcode.jpg" alt="技术支持二维码" style="width: 100%; height: 100%; object-fit: cover; border-radius: 8px;">
+                        <img src="qrcode.jpg" alt="技术支持团队联系方式二维码" loading="lazy"
+                            style="width: 100%; height: 100%; object-fit: cover; border-radius: 8px;">
                     </div>
                 </div>
             </div>
@@ -1508,7 +1580,7 @@
             <div class="footer-grid">
                 <div class="footer-brand">
                     <div class="footer-logo">
-                        <img src="logo-icon.png" alt="Cedar-v">
+                        <img src="logo-icon.png" alt="Cedar-v Logo">
                         <span>Cedar-v</span>
                     </div>
                     <p class="footer-desc">License Manager 是 Cedar-v 开源的企业级软件授权管理平台，致力于帮助软件厂商构建完整的商业化生态。</p>
@@ -1536,7 +1608,8 @@
                     <ul class="footer-links">
                         <li><a href="#">关于我们</a></li>
                         <li><a href="#">联系我们</a></li>
-                        <li><a href="https://docs.lm.cedar-v.com/guide/community_strategy.html" target="_blank">社区策略</a></li>
+                        <li><a href="https://docs.lm.cedar-v.com/guide/community_strategy.html" target="_blank">社区策略</a>
+                        </li>
                     </ul>
                 </div>
             </div>
@@ -1545,7 +1618,8 @@
                 <div class="footer-social">
                     <a href="https://github.com/cedar-v/license-manager" target="_blank" title="GitHub">
                         <svg viewBox="0 0 24 24" fill="currentColor">
-                            <path d="M12 0C5.37 0 0 5.37 0 12c0 5.31 3.435 9.795 8.205 11.385.6.105.825-.255.825-.57 0-.285-.015-1.23-.015-2.235-3.015.555-3.795-.735-4.035-1.41-.135-.345-.72-1.41-1.23-1.695-.42-.225-1.02-.78-.015-.795.945-.015 1.62.87 1.845 1.23 1.08 1.815 2.805 1.305 3.495.99.105-.78.42-1.305.765-1.605-2.67-.3-5.46-1.335-5.46-5.925 0-1.305.465-2.385 1.23-3.225-.12-.3-.54-1.53.12-3.18 0 0 1.005-.315 3.3 1.23.96-.27 1.98-.405 3-.405s2.04.135 3 .405c2.295-1.56 3.3-1.23 3.3-1.23.66 1.65.24 2.88.12 3.18.765.84 1.23 1.905 1.23 3.225 0 4.605-2.805 5.625-5.475 5.925.435.375.81 1.095.81 2.22 0 1.605-.015 2.895-.015 3.3 0 .315.225.69.825.57A12.02 12.02 0 0024 12c0-6.63-5.37-12-12-12z"/>
+                            <path
+                                d="M12 0C5.37 0 0 5.37 0 12c0 5.31 3.435 9.795 8.205 11.385.6.105.825-.255.825-.57 0-.285-.015-1.23-.015-2.235-3.015.555-3.795-.735-4.035-1.41-.135-.345-.72-1.41-1.23-1.695-.42-.225-1.02-.78-.015-.795.945-.015 1.62.87 1.845 1.23 1.08 1.815 2.805 1.305 3.495.99.105-.78.42-1.305.765-1.605-2.67-.3-5.46-1.335-5.46-5.925 0-1.305.465-2.385 1.23-3.225-.12-.3-.54-1.53.12-3.18 0 0 1.005-.315 3.3 1.23.96-.27 1.98-.405 3-.405s2.04.135 3 .405c2.295-1.56 3.3-1.23 3.3-1.23.66 1.65.24 2.88.12 3.18.765.84 1.23 1.905 1.23 3.225 0 4.605-2.805 5.625-5.475 5.925.435.375.81 1.095.81 2.22 0 1.605-.015 2.895-.015 3.3 0 .315.225.69.825.57A12.02 12.02 0 0024 12c0-6.63-5.37-12-12-12z" />
                         </svg>
                     </a>
                 </div>
@@ -1556,7 +1630,7 @@
     <script>
         // Scroll animation
         const animateElements = document.querySelectorAll('.animate-on-scroll');
-        
+
         const observer = new IntersectionObserver((entries) => {
             entries.forEach(entry => {
                 if (entry.isIntersecting) {
@@ -1576,15 +1650,16 @@
 
         window.addEventListener('scroll', () => {
             const currentScroll = window.pageYOffset;
-            
+
             if (currentScroll > 100) {
                 header.style.boxShadow = '0 2px 10px rgba(0, 0, 0, 0.1)';
             } else {
                 header.style.boxShadow = 'none';
             }
-            
+
             lastScroll = currentScroll;
         });
     </script>
 </body>
+
 </html>
